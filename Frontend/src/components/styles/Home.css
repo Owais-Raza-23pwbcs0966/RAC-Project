@@ -1,0 +1,246 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Cedarville+Cursive&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playwrite+AU+QLD+Guides&family=Playwrite+GB+J+Guides:ital@0;1&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* General styles for the home container */
+.home {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero section styling */
+.hero {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hero image container with background image and styling */
+.hero-img {
+    width: 85%;
+    height: 500px;
+    background-color: aqua;
+    background-image: url('/robot.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 5px 0px;
+}
+
+/* Hero section title styling */
+.hero > h1 {
+    font-size: 60px;
+    font-weight: 900;
+    margin: 5px 0px;
+}
+
+/* About Us section layout */
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    gap: 25px;
+}
+
+/* About Us text container */
+.text {
+    width: 45%;
+    height: 100%;
+}
+
+/* About Us image container styling */
+.about-us-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 100%;
+    gap: 20px;
+}
+
+/* About Us text header styling */
+.text > h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 10px 20px;
+}
+
+/* About Us paragraph text styling */
+.text > p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: "DM Mono";
+    margin: 20px 20px;
+    line-height: 1.5;
+}
+
+/* Individual About Us image sections with background styling */
+.about-us-img-1-1 {
+    width: 45%;
+    height: 100%;
+    background-image: url('/robot-grid-1.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.about-us-img-1-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 100%;
+    gap: 20px;
+}
+
+.about-us-img-2 {
+    width: 100%;
+    height: 50%;
+    background-image: url('/robot-grid-2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.about-us-img-3 {
+    width: 100%;
+    height: 50%;
+    background-image: url('/robot-grid-3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+/* Our Vision section layout */
+.our-vision {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    gap: 25px;
+}
+
+/* Our Vision image container with background image styling */
+.our-vision-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 100%;
+    background-image: url('/our-vision.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+/* Achievements section layout */
+.achievements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Achievements section title styling */
+.achievements > h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 5px 20px;
+}
+
+/* Achievements images container */
+.achievements-imgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    gap: 20px;
+}
+
+/* Individual achievement image containers */
+.achievements-img {
+    width: 350px;
+    height: 400px;
+}
+
+/* Styling for images inside achievement containers */
+.achievements-img > img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Styling for hover effects on achievements images */
+.achievements-img {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #8e8a8b;
+}
+
+.achievements-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 20px;
+}
+
+.achievements-img::after {
+    content: attr(data-description);
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+    transition: bottom 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Descriptions for each achievement (hover text) */
+.achievements-img:nth-child(1)::after {
+    content: "First Place in National Robotics Competition 2023. Our team demonstrated exceptional skills in robot design and programming.";
+}
+
+.achievements-img:nth-child(2)::after {
+    content: "Successfully organized RoboTech Workshop 2023, training over 100 students in basic robotics and automation.";
+}
+
+.achievements-img:nth-child(3)::after {
+    content: "Innovation Award at International Tech Expo for developing an autonomous waste sorting robot.";
+}
+
+.achievements-img:nth-child(4)::after {
+    content: "Community outreach program teaching robotics to underprivileged schools, impacting 500+ students.";
+}
+
+/* Hover effects for achievements images */
+.achievements-img:hover::before {
+    opacity: 1;
+}
+
+.achievements-img:hover::after {
+    bottom: 0;
+}

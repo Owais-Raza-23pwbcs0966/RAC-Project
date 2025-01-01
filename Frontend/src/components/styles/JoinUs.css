@@ -1,0 +1,137 @@
+/* Importing Google Fonts for typography styles */
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Playwrite+AU+QLD+Guides&family=Playwrite+GB+J+Guides:ital@0;1&display=swap');
+
+/* Main container to center content vertically and horizontally on the page */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #f2f2f2; /* Light gray background for subtle contrast */
+}
+
+/* Form container with rounded edges and centered content */
+.joinUs-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 550px;
+    border-radius: 15px; /* Smooth rounded corners */
+}
+
+/* Styling for the form section where inputs are placed */
+.form-section {
+    width: 45%;
+    height: 500px;
+    margin-top: 50px;
+}
+
+/* Heading section for displaying title and image */
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 500px;
+    background-color: #f2f2f2; /* Matching background with the main container */
+}
+
+/* Image inside the heading section */
+.join-us-img {
+    width: auto;
+    height: 400px; /* Constrained height for the image */
+}
+
+/* Styling for heading text */
+.heading > h1 {
+    margin: 0px;
+    font-size: 3rem; /* Large font size for emphasis */
+    font-family: "DM Mono"; /* Consistent font across elements */
+    text-align: center;
+}
+
+/* Styling for subtext under the heading */
+.heading > p {
+    margin: 0px;
+    text-align: center;
+    font-family: "DM Mono";
+}
+
+/* Input fields styling for text and text area */
+input,
+textarea {
+    width: 80%;
+    padding: 5px 5px;
+    margin: 30px 45px; /* Consistent spacing */
+    border: none;
+    border-bottom: 2px solid black; /* Underlined style */
+    background: transparent;
+    font-size: 14px;
+    font-weight: 300;
+    transition: 300ms ease; /* Smooth transition on interaction */
+}
+
+/* Container for input fields to stack vertically */
+.input {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Styling for input and textarea when focused */
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #fe560f; /* Highlight with orange color on focus */
+}
+
+/* Label styling for placeholders */
+label {
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: 300ms ease;
+    margin-left: 45px;
+}
+
+/* Move label upwards when input is focused or not empty */
+input:focus + label,
+input:not(:placeholder-shown) + label,
+textarea:focus + label,
+textarea:not(:placeholder-shown) + label {
+    transform: translateY(-27px);
+}
+
+/* Submit button container for alignment */
+.submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin-top: 15px;
+}
+
+/* Button styling for submission */
+.submit-btn > button {
+    width: 80%;
+    height: 40px;
+    font-size: 1.5rem; /* Larger text for visibility */
+    padding: 5px;
+    border-radius: 30px; /* Rounded edges for a modern look */
+    color: white;
+    background-color: black; /* Default dark background */
+    box-shadow: 0 4px 8px #8e8a8b; /* Subtle shadow effect */
+}
+
+/* Hover effects for button */
+button:hover {
+    background-color: #fe560f; /* Orange background on hover */
+    color: black; /* Switch text color */
+    transition: 300ms ease-in-out; /* Smooth hover transition */
+    transform: scale(1.05); /* Slight scale effect */
+}

@@ -1,0 +1,61 @@
+/* Import fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Agu+Display&family=Cedarville+Cursive&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Playwrite+AU+QLD+Guides&family=Playwrite+GB+J+Guides:ital@0;1&display=swap');
+
+/* Main container for collaboration section */
+.collab {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    gap: 50px; /* Space between child elements */
+    width: 100%; /* Full width */
+    height: 100vh; /* Full viewport height */
+    background-color: #f2f2f2; /* Light gray background */
+}
+
+/* Form container styling */
+.collab-form {
+    width: 40%; /* 40% of the container's width */
+    height: 500px; /* Fixed height */
+}
+
+/* Image container styling */
+.collab-img {
+    width: 45%; /* 45% of the container's width */
+    height: 500px; /* Fixed height */
+    background-image: url("/collab-1.png"); /* Background image */
+    background-position: center; /* Center the image */
+    background-size: contain; /* Ensure the image is fully visible */
+}
+
+/* Heading inside the form */
+.collab-form > h1 {
+    font-size: 3rem; /* Large font size */
+    font-family: "DM Mono"; /* Use DM Mono font */
+    margin: 0px 30px; /* Margin around the heading */
+}
+
+/* Paragraph inside the form */
+.collab-form > p {
+    margin: 0px 30px; /* Margin around the paragraph */
+    font-family: "DM Mono"; /* Use DM Mono font */
+}
+
+/* Input field container styling */
+.input {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    position: relative; /* For relative positioning */
+}
+
+/* Shared styling for input and textarea fields */
+input, textarea {
+    width: 50%; /* Half the container's width */
+    padding: 5px; /* Padding inside the fields */
+    margin: 0px 45px; /* Horizontal margin for spacing */
+    border: none; /* No border */
+    border-bottom: 2px solid black; /* Black underline */
+    background: transparent; /* Transparent background */
+    font-size: 14px; /* Font size */
+    font-weight: 300; /* Light font weight */
+    transition: 300ms ease; /* Smooth transition for focus effects */
+}

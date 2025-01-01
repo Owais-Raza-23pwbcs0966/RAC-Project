@@ -1,0 +1,71 @@
+/* Header styling */
+header {
+    display: flex; /* Flexbox layout to align items horizontally */
+    background: linear-gradient(to bottom, #bcb8b9, #f2f2f2); /* Gradient background */
+    height: 80px; /* Set the height of the header */
+    width: 100vw; /* Full width */
+    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Space between logo and navigation */
+}
+
+/* Navigation menu styling */
+ul {
+    display: flex; /* Flexbox layout to display menu items horizontally */
+    font-size: 20px; /* Font size for the menu items */
+}
+
+ul > li {
+    list-style: none; /* Remove default list bullets */
+    text-decoration: none; /* Ensure no default decoration */
+    margin: 20px 10px; /* Add margin around list items */
+}
+
+/* Styling for the anchor tags inside list items */
+ul li a {
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Ensure links behave like block elements */
+    font-family: "DM Mono"; /* Set custom font */
+    font-weight: 500; /* Medium weight font */
+    font-size: 1.5rem; /* Font size for navigation links */
+    color: black; /* Set text color to black */
+}
+
+/* Button styling for navigation links */
+li button {
+    background: none; /* No background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 3px 15px; /* Padding inside buttons */
+}
+
+/* Hover effect for navigation buttons */
+li button:hover {
+    background-color: #fe560f; /* Orange background on hover */
+    border-radius: 10px; /* Rounded corners on hover */
+}
+
+/* Styling for the header logo */
+.header-logo {
+    width: 120px; /* Set logo width */
+    height: 120px; /* Set logo height */
+    background-image: url('/rac-new-logo.png'); /* Set logo image */
+    background-size: cover; /* Ensure logo covers the div */
+    background-position: center; /* Center the logo image */
+    background-repeat: no-repeat; /* Prevent logo image from repeating */
+    margin:  30px; /* Add margin to the logo */
+}
+
+/* Button styling for "Join Us" button */
+.joinUs-btn {
+    background-color: white; /* White background for the button */
+    border-radius: 20px; /* Rounded corners */
+    padding: 5px 15px; /* Padding inside the button */
+    font-family: "DM Mono"; /* Set custom font */
+    font-weight: 500; /* Medium weight font */
+    font-size: 1.5rem; /* Font size */
+    color: black; /* Text color */
+    margin-right: 10px; /* Margin to the right of the button */
+    box-shadow: 0 4px 8px #8e8a8b; /* Subtle shadow effect */
+}
+
+

@@ -1,0 +1,48 @@
+/* Footer Styling */
+.footer {
+    position: absolute; /* Positioning the footer at the bottom of the page */
+    width: 100%; /* Full width of the screen */
+    height: 3rem; /* Height of the footer, adjusted for the icons */
+    text-align: center; /* Center the content inside the footer */
+    background: linear-gradient(to bottom, #f2f2f2, #bcb8b9); /* Gradient background */
+    color: black; /* Text color */
+    font-size: 1.2rem; /* Font size for the footer text */
+    padding: 10px; /* Padding around the footer content */
+    display: flex; /* Using Flexbox for layout */
+    flex-direction: column; /* Stack items vertically (first icons, then text) */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    margin-bottom: 0; /* No margin at the bottom */
+    margin-top: auto; /* Ensure the footer is at the bottom of the page */
+}
+
+/* Social Icons Styling */
+.social-icons {
+    margin-bottom: 10px; /* Adds space between the icons and the text */
+}
+
+/* Styling individual social media links */
+.social-icons a {
+    margin: 0 15px; /* Space between icons */
+    color: black; /* Default color of the icons */
+    text-decoration: none; /* Remove default link underlining */
+    display: inline-block; /* Allows margin to be applied to links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Hover effect for social media icons */
+.social-icons a:hover {
+    color: #1e90ff; /* Change icon color to blue on hover */
+}
+
+/* Set icon size */
+.social-icons svg {
+    width: 30px; /* Set width of icons */
+    height: 30px; /* Set height of icons */
+}
+
+/* Styling for the copyright text */
+.footer p {
+    font-size: 1rem; /* Set font size for the copyright text */
+    font-weight: 550; /* Slightly bold font for the text */
+}
