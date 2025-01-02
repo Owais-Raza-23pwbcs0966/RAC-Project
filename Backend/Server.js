@@ -117,16 +117,18 @@ app.post("/Collaborate", async (req, res) => {
     }
 });
 
-// Route for fetching team data from the database
 app.get("/teamData", async (req, res) => {
     try {
-        const data = await teamData.find();  // Retrieve all team data from the database
-        res.status(200).json(data);  // Respond with the team data
+        console.log("Fetching team data...");
+        const data = await teamData.find();
+        console.log("Team data retrieved:", data);
+        res.status(200).json(data);
     } catch (error) {
-        console.error("Error fetching team data:", error.message);  // Log error if something goes wrong
-        res.status(500).json({ message: "Internal Server Error" });  // Send error response
+        console.error("Error fetching team data:", error.message);
+        res.status(500).json({ message: "Internal Server Error" });
     }
 });
+
 
 // Start Server
 app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));  // Start the Express server

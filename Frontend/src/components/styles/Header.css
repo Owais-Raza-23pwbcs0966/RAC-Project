@@ -64,7 +64,7 @@ li button:hover {
     font-weight: 500; /* Medium weight font */
     font-size: 1.5rem; /* Font size */
     color: black; /* Text color */
-    margin-right: 10px; /* Margin to the right of the button */
+    margin-right: 36px; /* Margin to the right of the button */
     box-shadow: 0 4px 8px #8e8a8b; /* Subtle shadow effect */
 }
 
