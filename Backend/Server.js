@@ -66,7 +66,11 @@ app.post("/JoinUs", async (req, res) => {
             from: process.env.EMAIL_USER,  // Sender's email
             to: email,  // Recipient's email (user's email)
             subject: "Welcome to Robotics Automation Community",  // Email subject
-            text: `Hello ${name}, Thank you for joining the Robotics Automation Community. We are excited to have you on board!`,  // Email body
+            text: `Hello ${name}, 
+            Thank you for joining the Robotics Automation Community. We are excited to have you on board!
+            Please wait for our response.
+            Regards,
+            Robotics Automation Community`,  // Email body
         };
 
         // Send the email
