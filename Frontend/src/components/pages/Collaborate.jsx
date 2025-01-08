@@ -29,6 +29,8 @@ export const Collaborate = () => {
     // Log the form data to console (for debugging purposes)
     console.log(formData);
 
+    axios.defaults.withCredentials = true;
+
     try {
       // Making a POST request to the backend server with form data
       const response = await axios.post(
