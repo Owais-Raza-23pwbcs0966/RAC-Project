@@ -15,7 +15,7 @@ export const Teams = () => {
   // useEffect hook to fetch data when the component mounts
   useEffect(() => {
     axios
-      .get("http://localhost:5000/teamData") // API call to fetch team data
+      .get("http://rac-project.vercel.app/teamData") // API call to fetch team data
       .then((res) => {
         setTeamData(res.data); // Save fetched data to state
         setLoading(false); // Set loading to false once data is fetched
