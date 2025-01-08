@@ -31,6 +31,10 @@ mongoose
 
 // Routes
 
+app.get('/',async(req,res)=>{
+    res.json('hello bhai server chal rha hai')
+})
+
 // Route for handling "JoinUs" form submissions
 app.post("/JoinUs", async (req, res) => {
     console.log("Request body received:", req.body);  // Log incoming request body
