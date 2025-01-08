@@ -16,7 +16,7 @@ const PORT = 5000;
 // Middleware setup
 app.use(bodyParser.json());  // Parse incoming request bodies as JSON
 app.use(cors({
-    origin:['https://rac-project-frontend.vercel.app/'],
+    origin:['https://rac-project-frontend.vercel.app'],
     methods:['POST','GET'],
     credentials:true
 }));  // Enable Cross-Origin Resource Sharing (CORS) for all routes
