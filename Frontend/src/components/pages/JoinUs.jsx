@@ -24,6 +24,8 @@ export const JoinUs = () => {
     setFormData({ ...formData, [data.target.name]: data.target.value }); // Update specific input field
   };
 
+  axios.defaults.withCredentials = true;
+  
   // Handle form submission
   const handleSubmit = async (data) => {
     data.preventDefault(); // Prevent default form submission behavior
