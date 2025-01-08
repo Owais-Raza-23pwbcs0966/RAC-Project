@@ -12,6 +12,8 @@ export const Teams = () => {
   // State to track errors during data fetching
   const [error, setError] = useState(null);
 
+  axios.defaults.withCredentials = true;
+
   // useEffect hook to fetch data when the component mounts
   useEffect(() => {
     axios
