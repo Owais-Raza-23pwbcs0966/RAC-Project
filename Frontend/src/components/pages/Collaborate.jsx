@@ -32,7 +32,7 @@ export const Collaborate = () => {
     try {
       // Making a POST request to the backend server with form data
       const response = await axios.post(
-        "http://localhost:5000/Collaborate",
+        "http://rac-project.vercel.app/Collaborate",
         formData,
         {
           headers: {
