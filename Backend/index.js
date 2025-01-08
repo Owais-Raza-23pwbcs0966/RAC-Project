@@ -15,7 +15,11 @@ const PORT = 5000;
 
 // Middleware setup
 app.use(bodyParser.json());  // Parse incoming request bodies as JSON
-app.use(cors());  // Enable Cross-Origin Resource Sharing (CORS) for all routes
+app.use(cors({
+    origin:['https://rac-project-frontend.vercel.app/'],
+    methods:['POST','GET'],
+    credentials:true
+}));  // Enable Cross-Origin Resource Sharing (CORS) for all routes
 
 // MongoDB Connection
 const mongo_URI = process.env.MONGO_URI;  // Get MongoDB URI from environment variable
