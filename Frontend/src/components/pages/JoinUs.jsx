@@ -31,7 +31,7 @@ export const JoinUs = () => {
     setIsSubmitting(true); // Disable submit button while submitting
     try {
       // Send form data to the server using POST request
-      const response = await axios.post("http://rac-project.vercel.app/JoinUs", formData, {
+      const response = await axios.post("https://rac-project.vercel.app/JoinUs", formData, {
         headers: {
           'Content-Type': 'application/json', // Specify JSON content type
         }
