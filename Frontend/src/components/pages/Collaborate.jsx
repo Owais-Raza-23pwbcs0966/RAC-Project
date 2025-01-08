@@ -21,6 +21,8 @@ export const Collaborate = () => {
     setFormData({ ...formData, [data.target.name]: data.target.value });
   };
 
+  axios.defaults.withCredentials = true;
+
   // Handle form submission
   const handleSubmit = async (data) => {
     data.preventDefault(); // Prevent the default form submission behavior
@@ -28,8 +30,6 @@ export const Collaborate = () => {
 
     // Log the form data to console (for debugging purposes)
     console.log(formData);
-
-    axios.defaults.withCredentials = true;
 
     try {
       // Making a POST request to the backend server with form data
