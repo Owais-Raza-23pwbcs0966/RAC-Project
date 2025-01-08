@@ -14,20 +14,12 @@ const app = express();
 const PORT = 5000;
 
 // Middleware setup
-app.use(bodyParser.json());  // Parse incoming request bodies as JSON
-// app.use(cors({
-//     origin:['https://rac-project-frontend.vercel.app'],
-//     methods:['POST','GET'],
-//     credentials:true
-// }));  // Enable Cross-Origin Resource Sharing (CORS) for all routes
-
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'https://rac-project-frontend.vercel.app'); // Specific origin
-    res.header('Access-Control-Allow-Methods', 'GET,POST'); // Allowed methods
-    res.header('Access-Control-Allow-Headers', 'Content-Type'); // Allowed headers
-    res.header('Access-Control-Allow-Credentials', 'true'); // Allow credentials
-    next();
-});
+app.use(cors({
+    origin: ['https://rac-project-frontend.vercel.app'],
+    methods: ['GET', 'POST', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true
+}));
 
 // MongoDB Connection
 const mongo_URI = process.env.MONGO_URI;  // Get MongoDB URI from environment variable
