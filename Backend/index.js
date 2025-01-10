@@ -15,11 +15,16 @@ const PORT = 5000;
 
 // Middleware setup
 app.use(cors({
-    origin: ['https://rac-project-frontend.vercel.app'],
+    origin: ['https://rac-project-frontend.vercel.app',
+        'https://rac-project.vercel.app',
+        `http://localhost:${PORT}`],
     methods: ['GET', 'POST', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
 }));
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // MongoDB Connection
 const mongo_URI = process.env.MONGO_URI;  // Get MongoDB URI from environment variable
